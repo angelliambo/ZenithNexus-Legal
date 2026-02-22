@@ -1,0 +1,122 @@
+/* Importar variables globales */
+@import url('../core/variables.css');
+
+/* Legal Pages Styles - Tema oscuro sobrio, prioridad legibilidad */
+/* Los estilos del header están en ../styles/header.css */
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark-main);
+}
+
+.legal-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark-main);
+  min-height: 100vh;
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.legal-header h1 {
+  font-size: 1.8rem;
+  color: var(--primary-light);
+  margin-bottom: 8px;
+}
+
+.last-update {
+  color: var(--text-dark-muted);
+  font-size: 0.85rem;
+}
+
+.legal-content {
+  background: var(--card-bg-dark-solid);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-dark);
+}
+
+.legal-section {
+  margin-bottom: 25px;
+}
+
+.legal-section h2 {
+  font-size: 1.15rem;
+  color: var(--text-dark-main);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.legal-section p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-section ul {
+  margin-left: 18px;
+  margin-bottom: 12px;
+}
+
+.legal-section li {
+  line-height: 1.7;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-section strong {
+  color: var(--primary-light);
+}
+
+.warning-box {
+  background: rgba(220, 38, 38, 0.1);
+  border: 2px solid var(--error);
+  border-radius: 8px;
+  padding: 18px;
+  margin-top: 30px;
+}
+
+.warning-box h2 {
+  color: #fca5a5;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+.warning-box p {
+  color: #fecaca;
+}
+
+.legal-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-dark);
+  color: var(--text-dark-muted);
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .legal-container {
+    padding: 20px 15px;
+  }
+  
+  .legal-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .legal-content {
+    padding: 20px;
+  }
+  
+  .legal-section h2 {
+    font-size: 1.05rem;
+  }
+}
